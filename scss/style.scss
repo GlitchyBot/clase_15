@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@100;700;900&family=Montserrat:wght@300;400;500&display=swap";
+
+$titulo: 60px 'Lato', sans-serif;
+$principal: 20px 'Montserrat', sans-serif;
+$nombres: 26px 'Montserrat', sans-serif;
+
+a {
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body {
+  font: $principal;
+  font-weight:normal;  
+  text-align: justify;
+  line-height: 150%;
+  padding: 15px;
+
+}
+
+h1 {
+    font:$titulo;
+    font-weight: 900px;
+    letter-spacing: 24px;
+    text-align: center;
+    margin: 20px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+      font-size: 34px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    h1 {
+      font-size: 34px;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    font: $nombres;
+
+  }
+
+  .gallery {-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+  }
+
+
+
+     
+    @media (min-width : 768px){
+      .gallery {-webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%; }
+    }
+    
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+  }
+    
